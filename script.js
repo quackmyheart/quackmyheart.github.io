@@ -67,6 +67,12 @@ const worker = new Tesseract.createWorker();
 await worker.loadLanguage('eng');
 await worker.initialize();
 
+const { data: { text } } = await worker.recognize('logo.JPG');
+textRecognitionResults.innerText = text;
+
+// end the Tesseract 
+await worker.terminate();
+
 
 
 
