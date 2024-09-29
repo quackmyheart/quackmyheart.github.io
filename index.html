@@ -36,6 +36,11 @@
     <button id="cap">
         capture
     </button>
+
+    <canvas id="canvas"> </canvas>
+    <div class="output">
+          <img id="photo" alt="The screen capture will appear in this box." />
+    </div>
     
 </body>
 <script>
@@ -44,6 +49,9 @@
         let video = document.getElementById("vid");
         let mediaDevices = navigator.mediaDevices;
         vid.muted = true;
+        cap.addEventListener("click", () => {
+            
+        });
         but.addEventListener("click", () => {
 
             // Accessing the user camera and video.
