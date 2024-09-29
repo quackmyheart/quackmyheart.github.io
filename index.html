@@ -6,7 +6,7 @@
   </head>
 <body>
     
-  <h1> HTML version: 2.6 </h1>
+  <h1> HTML version: 2.7 </h1>
   <p id = "version">yay</p>
   <p id = "versionRecognize">yay</p>
     
@@ -38,5 +38,16 @@
   <!-- JavaScript OCR Tesseract CDN 
   hopefully this means that I don't have to download anything? -->
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.0.1/dist/tesseract.min.js"></script>
+  
+  <!-- google gemini things -->
+  <script type="importmap">
+    {
+    "imports": {
+    "@google/generative-ai": "https://esm.run/@google/generative-ai"
+    }
+    }
+  </script>
+
+  
 </body>
 </html>
