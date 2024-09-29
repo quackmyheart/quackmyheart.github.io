@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 2.6'
+version.innerText = 'javascript 2.7'
 
 var image_to_recognize = ""; // image to be recognized 
 
