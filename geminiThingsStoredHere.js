@@ -1,10 +1,5 @@
 var ver_gemini = document.getElementById("versionGemini"); // checking if updated
-ver_gemini.innerText = 'javascript gemini 1.4';
-
-import { GoogleGenerativeAI } from "@google/generative-ai";
-
-// Fetch your API_KEY
-const API_KEY = "AIzaSyDMf8xYKYkHVh-1s4n1GBzueH6uYdfWvgM";
+ver_gemini.innerText = 'javascript gemini 1.5'; 
 
 // Make sure to include these imports:
 // import { GoogleGenerativeAI } from "@google/generative-ai";
