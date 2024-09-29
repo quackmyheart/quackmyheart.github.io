@@ -49,9 +49,14 @@
         let video = document.getElementById("vid");
         let mediaDevices = navigator.mediaDevices;
         vid.muted = true;
-        cap.addEventListener("click", () => {
-            
-        });
+        cap.addEventListener(
+            "click",
+              (ev) => {
+                takepicture();
+                ev.preventDefault();
+              },
+              false,
+            );
         but.addEventListener("click", () => {
 
             // Accessing the user camera and video.
