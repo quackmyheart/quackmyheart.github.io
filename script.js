@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 3.6'
+version.innerText = 'javascript 3.7'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -62,24 +62,13 @@ startbutton.addEventListener(
 var codeButton = document.getElementById('codeButton'); // button to be pressed to start the text recognition 
 var textRecognitionResults = document.getElementById('result'); // where the text recognition results are to be displayed
 
-/*
-// testing the code 
-const worker = new Tesseract.createWorker();
-await worker.loadLanguage('eng');
-await worker.initialize();
+// code from the documentation 
+const { createWorker } = require('tesseract.js');
 
-const { data: { text } } = await worker.recognize('logo.JPG');
-textRecognitionResults.innerText = text;
+const worker = await createWorker('eng');
 
-// end the Tesseract 
-await worker.terminate();
-*/ 
-
-
-
-
-
-
-
-
-
+(async () => {
+  const { data: { text } } = await worker.recognize("logo.JPG");
+  console.log(text);
+  await worker.terminate();
+})();
