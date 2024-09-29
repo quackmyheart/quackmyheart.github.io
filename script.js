@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 3.7'
+version.innerText = 'javascript 3.8'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -62,6 +62,7 @@ startbutton.addEventListener(
 var codeButton = document.getElementById('codeButton'); // button to be pressed to start the text recognition 
 var textRecognitionResults = document.getElementById('result'); // where the text recognition results are to be displayed
 
+/* 
 // code from the documentation 
 const { createWorker } = require('tesseract.js');
 
@@ -72,3 +73,4 @@ const worker = await createWorker('eng');
   console.log(text);
   await worker.terminate();
 })();
+*/ 
