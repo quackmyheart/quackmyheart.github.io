@@ -1,5 +1,5 @@
 var verrec = document.getElementById('versionRecognize'); // checking if updated
-verrec.innerText = 'javascript 1.5';
+verrec.innerText = 'javascript tesseract 1.5';
 
 // text recognition time 
 var codeButton = document.getElementById('codeButton'); // button to be pressed to start the text recognition 
