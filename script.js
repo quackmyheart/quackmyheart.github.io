@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 1.9'
+version.innerText = 'javascript 2.0'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -41,8 +41,8 @@ startbutton.addEventListener(
       //context.drawImage(video, 0, 0, width, height); // original drwaing image
 
       // flip the image 
-      context.save()
-      context.scale(-1, 1)
+      context.save();
+      context.scale(-1, 1);
       context.drawImage(video, -canvas.width, 0, canvas.width, canvas.height);
       context.restore;
 
