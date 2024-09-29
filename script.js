@@ -1,10 +1,14 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 1.0'
+version.innerText = 'javascript 1.2'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
 var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
+
+// numbers for the size... arbitrary for now! 
+var width = 320; 
+var height = 320; 
 
 // get the media from the user's device 
 navigator.mediaDevices
@@ -16,4 +20,39 @@ navigator.mediaDevices
       .catch((err) => {
         console.error("An error occurred");
       });
+
+// take the photo 
+startbutton.addEventListener(
+  "click",
+  (ev) => {
+    takepicture();
+    ev.preventDefault();
+  },
+  false,
+);
+
+// takes the photo 
+  function takepicture() {
+    const context = canvas.getContext("2d");
+    if (width && height) {
+      canvas.width = width;
+      canvas.height = height;
+      context.drawImage(video, 0, 0, width, height);
+
+      const data = canvas.toDataURL("image/png");
+      photo.setAttribute("src", data);
+    } else {
+      clearphoto();
+    }
+  }
+
+// clear photo 
+  function clearphoto() {
+    const context = canvas.getContext("2d");
+    context.fillStyle = "#AAA";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    const data = canvas.toDataURL("image/png");
+    photo.setAttribute("src", data);
+  }
 
