@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Paper Studio Code</title>
-</head>
+  <head>
+    <title>Paper Studio Code</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!--linked CSS-->
+  </head>
 <body>
+    
+  <h1> HTML version: 1.5 </h1>
+  <p id = "version">yay</p>
+    
+  <div id = "logo">
+    <img src="logo.JPG" width="500">
+  </div> 
   
-<h1> HTML version: 1.4 </h1>
-<p id = "version">yay</p>
+  <div id = input_camera>
+    <video id="video"> video should display here </video>
+    <button id="startbutton"> Capture Code </button>
+  </div>
   
-<div id = "logo">
-  <img src="logo.JPG" width="500">
-</div> 
-
-<div id = input_camera>
-  <video id="video"> video should display here </video>
-  <button id="startbutton"> Capture Code </button>
-</div>
-
-<canvas id="canvas"> </canvas> <!-- canvas used to store images and manipulated so user doesn't see them --> 
-
-<div id = output_photo>
-  <img id="photo" alt="captured code should go here" />
-</div>
-
-<script src="script.js"></script>
+  <canvas id="canvas"> </canvas> <!-- canvas used to store images and manipulated so user doesn't see them --> 
+  
+  <div id = output_photo>
+    <img id="photo" alt="captured code should go here" />
+  </div>
+  
+  <script src="script.js"></script> <!--linked JavaScript-->
 </body>
 </html>
