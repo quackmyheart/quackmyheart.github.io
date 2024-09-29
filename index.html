@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="styles.css">
+<html lang="en">
 
-   <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
         div {
             width: 500px;
             height: 400px;
@@ -16,8 +21,21 @@
             object-fit: cover;
         }
     </style>
-<script src="script.js">
-document.addEventListener("DOMContentLoaded", () => {
+</head>
+
+<body>
+
+
+    <div>
+        <video id="vid"></video>
+    </div>
+    <br />
+    <button id="but" autoplay>
+        Open WebCam
+    </button>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
         let but = document.getElementById("but");
         let video = document.getElementById("vid");
         let mediaDevices = navigator.mediaDevices;
@@ -41,18 +59,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 </script>
-<body>
 
-<h1>My First Heading yayayyayay </h1>
-<p>My first paragraph.</p>
-
-<div>
-        <video id="vid"></video>
-    </div>
-    <br />
-    <button id="but" autoplay>
-        Open WebCam
-    </button>
-  
-</body>
 </html>
