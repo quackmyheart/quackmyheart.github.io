@@ -11,6 +11,24 @@ var startbutton = document.getElementById('startbutton'); // button pressed to c
 var width = 599; 
 var height = 486; 
 
+var codeButton1 = document.getElementById('codeButton1');
+var codeButton2 = document.getElementById('codeButton2');
+var codeButton3 = document.getElementById('codeButton3');
+var compile1 = document.getElementById('compile1');
+var compile2 = document.getElementById('compile2');
+var compile3 = document.getElementById('compile3');
+
+var result = document.getElementById('result');
+var compiled = document.getElementById('compiled');
+
+codeButton1.addEventListener(
+  "click",
+  (ev) => {
+    result.innerText = "python thing";
+  },
+  false,
+);
+
 // get the media from the user's device 
 navigator.mediaDevices
       .getUserMedia({ video: true, audio: false })
