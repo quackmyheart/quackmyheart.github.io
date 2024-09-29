@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 3.1'
+version.innerText = 'javascript 3.2'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -64,6 +64,7 @@ var textRecognitionResults = document.getElementById('result'); // where the tex
 
 // testing the code 
 const worker = new Tesseract.createWorker();
+/*
 await worker.loadLanguage('eng');
 await worker.initialize();
 
@@ -72,7 +73,7 @@ textRecognitionResults.innerText = text;
 
 // end the Tesseract 
 await worker.terminate();
-
+*/ 
 
 
 
