@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 2.4'
+version.innerText = 'javascript 2.5'
 
 var image_to_recognize = ""; // image to be recognized 
 
@@ -75,7 +75,7 @@ codeButton.addEventListener(
 );
 
 // recognize the text 
-function recognizeText() {
+async function recognizeText() {
 
       // initializing tesseract.js
       const worker = new Tesseract.createWorker();
