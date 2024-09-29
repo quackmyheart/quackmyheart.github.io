@@ -59,7 +59,7 @@ startbutton.addEventListener(
         context.fillRect(0, 0, canvas.width, canvas.height);
         
         const data = canvas.toDataURL("image/png");
-        image_to_recognize = data; // put the image inside of the global variable
+        // image_to_recognize = data; // put the image inside of the global variable
         photo.setAttribute("src", data);
   }
 
