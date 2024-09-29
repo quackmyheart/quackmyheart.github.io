@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript video 4.2';
+version.innerText = 'javascript video 4.3';
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -8,7 +8,7 @@ var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
 
 // numbers for the size... arbitrary for now! 
-var width = 600; 
+var width = 599; 
 var height = 486; 
 
 // get the media from the user's device 
