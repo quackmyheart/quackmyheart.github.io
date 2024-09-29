@@ -37,7 +37,7 @@ codeButton2.addEventListener(
   false,
 );
 
-codeButton2.addEventListener(
+codeButton3.addEventListener(
   "click",
   (ev) => {
     result.innerText = "???";
