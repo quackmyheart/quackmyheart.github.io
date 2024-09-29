@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript video 4.3';
+version.innerText = 'javascript video 4.4';
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -24,7 +24,47 @@ var compiled = document.getElementById('compiled');
 codeButton1.addEventListener(
   "click",
   (ev) => {
-    result.innerText = "python thing";
+    result.innerText = "python code";
+  },
+  false,
+);
+
+codeButton2.addEventListener(
+  "click",
+  (ev) => {
+    result.innerText = "ruby code";
+  },
+  false,
+);
+
+codeButton2.addEventListener(
+  "click",
+  (ev) => {
+    result.innerText = "the universe";
+  },
+  false,
+);
+
+compile1.addEventListener(
+  "click",
+  (ev) => {
+    compiled.innerText = "python compilation";
+  },
+  false,
+);
+
+compile2.addEventListener(
+  "click",
+  (ev) => {
+    compiled.innerText = "ruby compilation";
+  },
+  false,
+);
+
+compile3.addEventListener(
+  "click",
+  (ev) => {
+    compiled.innerText = "42";
   },
   false,
 );
