@@ -1,8 +1,9 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 1.2'
+version.innerText = 'javascript 1.3'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
+canvas.style.visibility='hidden'; // makes canvas hidden 
 var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
 
