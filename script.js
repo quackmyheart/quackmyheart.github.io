@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript video 4.4';
+version.innerText = 'javascript video 4.5';
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
