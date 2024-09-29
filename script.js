@@ -1,9 +1,9 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 1.8'
+version.innerText = 'javascript 1.9'
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
-canvas.style.visibility='hidden'; // makes canvas hidden 
+//canvas.style.visibility='hidden'; // makes canvas hidden 
 var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
 
@@ -38,7 +38,13 @@ startbutton.addEventListener(
     if (width && height) {
       canvas.width = width;
       canvas.height = height;
-      context.drawImage(video, 0, 0, width, height);
+      //context.drawImage(video, 0, 0, width, height); // original drwaing image
+
+      // flip the image 
+      context.save()
+      context.scale(-1, 1)
+      context.drawImage(video, -canvas.width, 0, canvas.width, canvas.height);
+      context.restore;
 
       const data = canvas.toDataURL("image/png");
       photo.setAttribute("src", data);
