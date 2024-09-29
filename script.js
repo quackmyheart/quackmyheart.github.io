@@ -1,3 +1,5 @@
+var version = document.getElementById('version'); // checking if updated
+
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
 var photo = document.getElementById('photo'); // where the photo is displayed
