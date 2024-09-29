@@ -40,14 +40,6 @@ startbutton.addEventListener(
       canvas.height = height;
       context.drawImage(video, 0, 0, width, height); // original drwaing image
 
-      // flip the image 
-          /*
-      context.save();
-      context.scale(-1, 1);
-      context.drawImage(video, -canvas.width, 0, canvas.width, canvas.height);
-      context.restore;
-      */
-
       const data = canvas.toDataURL("image/png");
       photo.setAttribute("src", data);
     } else {
