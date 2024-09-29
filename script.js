@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript video 4.1';
+version.innerText = 'javascript video 4.2';
 
 var video = document.getElementById('video'); // video streamed 
 var canvas = document.getElementById('canvas'); // hidden element 
@@ -8,8 +8,8 @@ var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
 
 // numbers for the size... arbitrary for now! 
-var width = 320; 
-var height = 320; 
+var width = 1109; 
+var height = 486; 
 
 // get the media from the user's device 
 navigator.mediaDevices
@@ -38,7 +38,7 @@ startbutton.addEventListener(
     if (width && height) {
       canvas.width = width;
       canvas.height = height;
-      context.drawImage(video, 0, 0, width, height); // original drwaing image
+      context.drawImage(video, 0, 0, width, height); // original drawing image
 
       const data = canvas.toDataURL("image/png");
       photo.setAttribute("src", data);
