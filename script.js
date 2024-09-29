@@ -24,7 +24,7 @@ var compiled = document.getElementById('compiled');
 codeButton1.addEventListener(
   "click",
   (ev) => {
-    result.innerText = "python code";
+    result.innerText = "sum = 0 / for i in range(1, n + 1): / sum += i * i / return sum";
   },
   false,
 );
@@ -32,7 +32,7 @@ codeButton1.addEventListener(
 codeButton2.addEventListener(
   "click",
   (ev) => {
-    result.innerText = "ruby code";
+    result.innerText = "public class PrimeSum { public static boolean isPrime(int num) { if (num <= 1) { return false; } for (int i = 2; i <= Math.sqrt(num); i++) { if (num % i == 0) { return false; } } return true; } public static void main(String[] args) { int n = 5; int count = 0; int sum = 0; int num = 2; while (count < n) { if (isPrime(num)) { sum += num; count++; } num++; } System.out.println(sum); } }";
   },
   false,
 );
@@ -40,7 +40,7 @@ codeButton2.addEventListener(
 codeButton2.addEventListener(
   "click",
   (ev) => {
-    result.innerText = "the universe";
+    result.innerText = "???";
   },
   false,
 );
@@ -48,7 +48,7 @@ codeButton2.addEventListener(
 compile1.addEventListener(
   "click",
   (ev) => {
-    compiled.innerText = "python compilation";
+    compiled.innerText = "385";
   },
   false,
 );
@@ -56,7 +56,7 @@ compile1.addEventListener(
 compile2.addEventListener(
   "click",
   (ev) => {
-    compiled.innerText = "ruby compilation";
+    compiled.innerText = "28";
   },
   false,
 );
