@@ -1,5 +1,5 @@
 var version = document.getElementById('version'); // checking if updated
-version.innerText = 'javascript 2.5'
+version.innerText = 'javascript 2.6'
 
 var image_to_recognize = ""; // image to be recognized 
 
@@ -63,7 +63,7 @@ startbutton.addEventListener(
         photo.setAttribute("src", data);
   }
 
-
+/* 
 // recognize the text 
 codeButton.addEventListener(
   "click",
@@ -88,3 +88,5 @@ async function recognizeText() {
       await worker.terminate();
       
 }
+
+*/ 
