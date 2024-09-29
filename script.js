@@ -8,7 +8,7 @@ var photo = document.getElementById('photo'); // where the photo is displayed
 var startbutton = document.getElementById('startbutton'); // button pressed to capture the photo 
 
 // numbers for the size... arbitrary for now! 
-var width = 1109; 
+var width = 600; 
 var height = 486; 
 
 // get the media from the user's device 
