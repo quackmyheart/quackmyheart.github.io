@@ -62,6 +62,12 @@ startbutton.addEventListener(
 var codeButton = document.getElementById('codeButton'); // button to be pressed to start the text recognition 
 var textRecognitionResults = document.getElementById('result'); // where the text recognition results are to be displayed
 
+// testing the code 
+const worker = new Tesseract.createWorker();
+await worker.loadLanguage('eng');
+await worker.initialize();
+
+
 
 
 
